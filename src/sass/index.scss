@@ -1,0 +1,75 @@
+.banner{
+    position: relative;width: 100%;height: 500px;top: -38px;
+    ul{overflow:hidden;position: relative;width: 1920px;height: 500px;margin:0 auto;}
+    li{display:none;position: absolute;width: 2880px;height: 750px;left: 40%;top: 50%;transform:translate(-50%,-50%);}
+    img{display:block;width: 100%;height: 100%;}
+}
+
+.adList{
+    ul{margin-top:-10px;}
+    li{position: relative;float:left;width: 290px;height: 290px;margin-right:10px;}
+    img{width: 290px;height: 290px;}
+    p{position: absolute;bottom: 0;width: 270px;height: 57px;margin: 10px;color: #575757;text-align: center;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;background: rgba(255, 255, 255, 0.9);}
+    b{display: block;padding:3px 0;font-size:22px;font-weight:bold;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+}
+
+.floor{
+    .floor-title{
+        height: 32px;margin:18px 0 5px 0;
+        h2{
+            float:left;
+            a{position:relative;display:inline-block;padding:10px 0 0 50px;height: 22px;line-height:22px;font-size:18px;font-weight:bold;color: #fc5f3c;}
+            i{position:absolute;top:0;left:0;display: inline-block;width: 29px;height: 16px;padding:8px;color: #fff;font-size: 14px;font-weight:bold;background: url(../img/floor_sprite.png) no-repeat 0 0;}
+        }
+        p{
+            float:right;padding-top:12px;
+            a{color: #4e4e4e;padding:0 8px 0 6px;border-right:1px solid #4e4e4e;}
+            a:last-of-type{border-right:0 none;}
+        }
+    }
+    .floor2{.floor-title{h2{
+                a{color: #007f4d;}
+                i{background-position:-46px 0;}
+            }}}
+    .floor3{.floor-title{h2{
+                a{color: #45c6ce;}
+                i{background-position:-184px 0;}
+            }}}
+    .floor4{.floor-title{h2{
+                a{color: #f0c000;}
+                i{background-position:-92px 0;}
+            }}}
+    .floor5{.floor-title{h2{
+                a{color: #e08683;}
+                i{background-position:-138px 0;}
+            }}}
+    .floor6{.floor-title{h2{
+                a{color: #3ca3dc;}
+                i{background-position:-541px 0;}
+            }}}
+
+    .floor-list{
+        .floor-side{
+            float:left;width: 275px;height: 462px;
+        }
+        .floor-main{
+            float:left;width: 924px;height: 462px;border-top: 1px solid #d5d5d5;border-left: 1px solid #d5d5d5;
+        }
+        .floor-type1{
+            li{float:left;overflow: hidden;width: 230px;height: 230px;border-right: 1px solid #d5d5d5;border-bottom: 1px solid #d5d5d5;}
+            li:nth-of-type(3),li:nth-of-type(4){width: 461px;}
+        }
+        .floor-type2{
+            .floor-col1{float:left;overflow: hidden;width: 234px;height: 383px;border-right: 1px solid #d5d5d5;border-bottom: 1px solid #d5d5d5;}
+            .floor-col2{
+                float:left;overflow: hidden;width: 442px;
+                a{display: block;overflow: hidden;float:left;width: 220px;height: 191px;border-right: 1px solid #d5d5d5;border-bottom: 1px solid #d5d5d5;background: #fff;}
+            }
+            .floor-col3{float:right;overflow: hidden;width: 246px;height: 461px;border-right: 1px solid #d5d5d5;border-bottom: 1px solid #d5d5d5;}
+            .floor-icon{
+                overflow: hidden;float:left;width: 654px;height: 55px;padding: 11px;background: #fff;border-right: 1px solid #d5d5d5;border-bottom: 1px solid #d5d5d5;
+                a{float:left;margin: 0 14px;}
+            }
+        }
+    }
+}
