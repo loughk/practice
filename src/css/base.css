@@ -330,6 +330,7 @@ body {
 }
 
 .nav .nav-type .nav-typeList {
+  display: none;
   position: absolute;
   height: 462px;
   background: rgba(255, 255, 255, 0.9);
@@ -389,7 +390,7 @@ body {
 
 .nav .nav-type .nav-typeItem {
   z-index: 2;
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   left: 180px;
@@ -421,6 +422,26 @@ body {
 .nav .nav-type .nav-typeItem img {
   position: absolute;
   bottom: 10px;
+}
+
+.nav .nav-type:hover .nav-typeList {
+  display: block;
+}
+
+.nav .nav-special {
+  display: none;
+  float: left;
+  width: 1020px;
+  height: 37px;
+  line-height: 37px;
+  border-bottom: 1px solid #008842;
+}
+
+.nav .nav-special li {
+  float: left;
+  width: 115px;
+  text-align: center;
+  font-size: 16px;
 }
 
 /*service*/

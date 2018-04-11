@@ -1,0 +1,97 @@
+.adpage a {
+  display: block;
+  float: left;
+}
+
+.adpage a:nth-of-type(1) {
+  width: 1200px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.adpage a:nth-of-type(2), .adpage a:nth-of-type(3) {
+  width: 405px;
+  height: 180px;
+  margin-right: 10px;
+}
+
+.adpage a:nth-of-type(4), .adpage a:nth-of-type(5) {
+  width: 180px;
+  height: 180px;
+}
+
+.adpage a:nth-of-type(4) {
+  margin-right: 10px;
+}
+
+.filter {
+  margin: 20px 0;
+  padding: 5px 10px;
+  background: #eaeaea;
+}
+
+.filter p {
+  float: left;
+  height: 18px;
+  line-height: 18px;
+  margin-left: -1px;
+  padding: 5px 10px;
+  border: 1px solid #c7c7c7;
+  background: #fff;
+}
+
+.filter p i {
+  width: 10px;
+  height: 16px;
+  margin-left: 3px;
+  background: url(../img/filter_sprite.png) no-repeat 0 0;
+}
+
+.filter p:nth-of-type(3) i {
+  background-position: -40px 0;
+}
+
+.goodlist {
+  overflow: hidden;
+  margin-left: -13px;
+}
+
+.goodlist li {
+  float: left;
+  position: relative;
+  width: 290px;
+  margin: 15px 0 0 13px;
+  background: #fff;
+}
+
+.goodlist .gl_img {
+  position: relative;
+  display: block;
+  width: 290px;
+  height: 290px;
+}
+
+.goodlist .gl_info {
+  padding: 10px;
+  height: 48px;
+}
+
+.goodlist .gl_name {
+  height: 16px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.goodlist .gl_price {
+  height: 22px;
+  line-height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 18px;
+  color: #e7380d;
+}

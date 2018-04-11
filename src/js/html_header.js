@@ -71,49 +71,49 @@
             <div class="nav-type">
                 <a href="#" class="nav-typeTitle">全部商品分类 ▼</a>
                 <ul class="nav-typeList">
-                    <li>
-                        <a href="#">
+                    <li data-typeId="国产水果">
+                        <a href="../html/typeall.html?typeid=01fruit">
                             <i></i>
                             国产水果
                             <b>&gt;</b>
                         </a>
                     </li>
-                    <li>
+                    <li data-typeId="精选肉类">
                         <a href="#">
                             <i></i>
                             精选肉类
                             <b>&gt;</b>
                         </a>
                     </li>
-                    <li>
+                    <li data-typeId="禽类蛋品">
                         <a href="#">
                             <i></i>
                             禽类蛋品
                             <b>&gt;</b>
                         </a>
                     </li>   
-                    <li>
+                    <li data-typeId="海鲜水产">
                         <a href="#">
                             <i></i>
                             海鲜水产
                             <b>&gt;</b>
                         </a>
                     </li>    
-                    <li>
+                    <li data-typeId="乳品糕点">
                         <a href="#">
                             <i></i>
                             乳品糕点
                             <b>&gt;</b>
                         </a>
                     </li>   
-                    <li>
+                    <li data-typeId="方便速食">
                         <a href="#">
                             <i></i>
                             方便速食
                             <b>&gt;</b>
                         </a>
                     </li>   
-                    <li>
+                    <li data-typeId="粮油杂货">
                         <a href="#">
                             <i></i>
                             粮油杂货
@@ -121,22 +121,14 @@
                         </a>
                     </li>
                 </ul>
-                <div class="nav-typeItem">
-                    <h4><a href="#">国产水果</a></h4>
-                    <p>
-                        <a href="#">666</a>
-                        <a href="#">666</a>
-                        <a href="#">666</a>
-                        <a href="#">666</a>
-                        <a href="#">666</a>
-                        <a href="#">666</a>
-                        <a href="#">666</a>
-                    </p>
-                    <a href="#">
-                        <img src="../img/nav_item1.png"/>
-                    </a>
-                </div>
+                <div class="nav-typeItem"></div>
             </div>
+            <ul class="nav-special">
+                <li><a href="#">新品专区</a></li>
+                <li><a href="#">优质生活</a></li>
+                <li><a href="#">银行专区</a></li>
+                <li><a href="#">菜谱专栏</a></li>
+            </ul>
         </div>
     </div>
     `);
