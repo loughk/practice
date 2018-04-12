@@ -429,7 +429,7 @@ body {
 }
 
 .nav .nav-special {
-  display: none;
+  display: block;
   float: left;
   width: 1020px;
   height: 37px;

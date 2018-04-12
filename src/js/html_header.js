@@ -11,7 +11,7 @@
             </ul>
             <ul class="fr">
                 <li class="fl topNav-login">
-                    <a href="#">[登录]</a>
+                    <a href="../html/sign.html?sign=in">[登录]</a>
                 </li>
                 <li class="fl topNav-register">
                     <a href="#">[注册]</a>
@@ -72,7 +72,7 @@
                 <a href="#" class="nav-typeTitle">全部商品分类 ▼</a>
                 <ul class="nav-typeList">
                     <li data-typeId="国产水果">
-                        <a href="../html/typeall.html?typeid=01fruit">
+                        <a href="../html/typeall.html?typesid=01fruit">
                             <i></i>
                             国产水果
                             <b>&gt;</b>
