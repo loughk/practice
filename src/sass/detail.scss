@@ -1,0 +1,23 @@
+.navdetails{
+    li{float:left;padding:10px 0;}
+    a{margin-right:10px;}
+    b{margin-right:10px;}
+}
+
+.pictures{
+    position: relative;float:left;width: 500px;height: 600px;
+    .picbig{
+        width: 500px;height: 500px;
+        img{display:block;width: 500px;height: 500px;}
+    }
+    .pics{
+        padding:10px 0;
+        li{float:left;width: 85px;height: 85px;border: 1px solid #bcbcbc;margin-right: 16px;cursor: pointer;}
+        img{display:block;width: 85px;height: 85px;}
+    }
+    .piczoom{
+        display:none;position:absolute;top:0;left:510px;width: 500px;height: 500px;background:#fff;overflow:hidden;
+    }
+    .picview{display:block;position:absolute;top:0;left:0;width:1000px;height:1000px;}
+
+}

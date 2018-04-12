@@ -1,0 +1,69 @@
+.navdetails li {
+  float: left;
+  padding: 10px 0;
+}
+
+.navdetails a {
+  margin-right: 10px;
+}
+
+.navdetails b {
+  margin-right: 10px;
+}
+
+.pictures {
+  position: relative;
+  float: left;
+  width: 500px;
+  height: 600px;
+}
+
+.pictures .picbig {
+  width: 500px;
+  height: 500px;
+}
+
+.pictures .picbig img {
+  display: block;
+  width: 500px;
+  height: 500px;
+}
+
+.pictures .pics {
+  padding: 10px 0;
+}
+
+.pictures .pics li {
+  float: left;
+  width: 85px;
+  height: 85px;
+  border: 1px solid #bcbcbc;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.pictures .pics img {
+  display: block;
+  width: 85px;
+  height: 85px;
+}
+
+.pictures .piczoom {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 510px;
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.pictures .picview {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 1000px;
+}

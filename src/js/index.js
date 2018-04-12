@@ -5,11 +5,13 @@ requirejs(['common','base'],function(cm,bs){
         var $banner = $('.banner');
         var $bannerLi = $('.banner li');
         var $bannerImg = $('.banner img');
+
         new Banner({
             '$bn':$banner,
             '$li':$bannerLi,
             '$img':$bannerImg
         });
+        
         function Banner(opt){
             var defaults = {
                 '$bn':{},

@@ -14,7 +14,7 @@
                     <a href="../html/sign.html?sign=in">[登录]</a>
                 </li>
                 <li class="fl topNav-register">
-                    <a href="#">[注册]</a>
+                    <a href="../html/sign.html?sign=up">[注册]</a>
                 </li>
                 <li class="fl topNav-mine">
                     <i></i>
@@ -39,10 +39,10 @@
     </div>
     <div class="header">
         <div class="container">
-            <div class="header-logo"></div>
+            <a class="header-logo" href="../index.html"></a>
             <div class="header-search">
                 <p class="clearfix">
-                    <input class="header-searchTxt" type="text" value="输入商品名／编号／拼音"/>
+                    <input class="header-searchTxt" type="text" placeholder="输入商品名／编号／拼音"/>
                     <input class="header-searchBtn" type="submit" value="搜索"/>
                 </p>
                 <p class="header-searchKeyword">

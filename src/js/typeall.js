@@ -131,5 +131,14 @@ requirejs(['common','base'],function(cm,bs){
             });
         }
 
+
+
+        goodlist.onclick = function(e){
+            var t = e.target;
+            if(t.parentNode.className == 'gl_img'){
+                var gdid = t.parentNode.parentNode.dataset.gdid;
+                location.href = '../html/detail.html?typesid=' + objURI.typesid + '&gdid=' + gdid;
+            }
+        }
     });
 });

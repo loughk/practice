@@ -100,7 +100,12 @@
   padding: 2px 4px;
   width: 46px;
   height: 22px;
+  line-height: 22px;
   border: 1px solid #c1c1c1;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 14px;
 }
 
 .signin .simain .siin {
@@ -136,12 +141,18 @@
 }
 
 .signup {
-  padding-top: 50px;
+  padding-top: 70px;
+  display: none;
+}
+
+.signup .container {
+  position: relative;
 }
 
 .signup .sumain {
   padding: 40px 100px;
   border: 1px solid #c4dfb1;
+  background: url(../img/sign_bg1.png) no-repeat 730px 110px;
   background-color: #fff;
 }
 
@@ -157,6 +168,7 @@
 .signup .sumain p {
   margin-bottom: 30px;
   font-size: 14px;
+  position: relative;
 }
 
 .signup .sumain .iptype2 {
@@ -178,7 +190,12 @@
   padding: 2px 4px;
   width: 46px;
   height: 22px;
+  line-height: 22px;
   border: 1px solid #c1c1c1;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #878787;
 }
 
 .signup .sumain .surdvcodes {
@@ -213,6 +230,76 @@
   padding-right: 35px;
   width: 255px;
   background: url(../img/sign_sprite.png) no-repeat 276px -70px;
+}
+
+.signup .sumain p:nth-of-type(7) {
+  margin-left: 124px;
+}
+
+.signup .sumain p:nth-of-type(7) a {
+  color: #008842;
+}
+
+.signup .sumain .suup {
+  width: 306px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  background: #008842;
+  border: 0 none;
+  cursor: pointer;
+}
+
+.signup .sumain .suup:hover {
+  background: #09964e;
+}
+
+.signup .sumain .sutip {
+  position: absolute;
+  top: 11px;
+  left: 450px;
+  height: 17px;
+  line-height: 17px;
+}
+
+.signup .sumain p:nth-of-type(7) .sutip {
+  margin-left: -124px;
+}
+
+.signup .sumain .sutip::before {
+  content: '';
+  display: block;
+  float: left;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  background: url(../img/sign_sprite2.png) no-repeat;
+}
+
+.signup .sumain .sutipok::before {
+  background-position: 0 -200px;
+}
+
+.signup .sumain .sutiptips::before {
+  background-position: -20px -200px;
+}
+
+.signup .sumain .sutiperror::before {
+  background-position: -40px -200px;
+}
+
+.signup .susi {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  font-size: 14px;
+}
+
+.signup .susia {
+  color: #ef760a;
+  text-decoration: underline;
 }
 
 .decorationline {

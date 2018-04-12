@@ -21,7 +21,7 @@
         .iptype1{padding-left: 50px; height: 38px;border: 1px solid #c1c1c1;background-color: #fff;font-size:14px;}
         .siuser,.sipsw{width: 254px;}
         .sivcode{width: 100px;}
-        .sivcodes{display:inline-block;vertical-align:middle;margin:0 10px;padding:2px 4px;width: 46px;height: 22px;border:1px solid #c1c1c1;}
+        .sivcodes{display:inline-block;vertical-align:middle;margin:0 10px;padding:2px 4px;width: 46px;height:22px;line-height:22px;border:1px solid #c1c1c1;text-decoration:none;letter-spacing:2px;text-align:center;font-size:14px;}
         .siin{width: 306px;height: 50px;color: #fff;font-size: 18px;background: #008842;border:0 none;cursor:pointer;}
         .siin:hover{background:#09964e;}
         div a{display:inline-block;width: 88px;height: 20px;margin-right:20px;background:url(../img/sign_sprite2.png) no-repeat -60px -200px;}
@@ -31,20 +31,33 @@
 }
 
 .signup{
-    padding-top:50px;
+    padding-top:70px;display:none;
+    .container{position:relative;}
     .sumain{
-        padding:40px 100px;border: 1px solid #c4dfb1;background-color: #fff;
+        padding:40px 100px;border: 1px solid #c4dfb1;background:url(../img/sign_bg1.png) no-repeat 730px 110px ;background-color: #fff;
         b{display:inline-block;width: 100px;height: 40px;line-height:40px;margin:0 10px;text-align:center;}
-        p{margin-bottom:30px;font-size:14px;}
+        p{margin-bottom:30px;font-size:14px;position:relative;}
         .iptype2{padding-left: 14px;height: 38px;border: 1px solid #c1c1c1;background-color: #fff;font-size:14px;}
         .suvcode{width: 147px;}
-        .suvcodes{display:inline-block;vertical-align:middle;margin:0 10px;padding:2px 4px;width: 46px;height: 22px;border:1px solid #c1c1c1;}
+        .suvcodes{display:inline-block;vertical-align:middle;margin:0 10px;padding:2px 4px;width: 46px;height: 22px;line-height:22px;border:1px solid #c1c1c1;text-decoration:none;letter-spacing:2px;text-align:center;color: #878787;}
         .surdvcodes{cursor:pointer;}
         .sumobile{padding-right:35px;width: 255px;background:url(../img/sign_sprite.png) no-repeat 276px -30px;}
         .sumobilecode{width: 147px;}
         .sumobileget{display: inline-block;width: 120px;height: 38px;margin-left:17px;line-height: 38px;text-align: center;vertical-align:middle;background-color: #f7f7f7;border: 1px solid #c1c1c1;color:#008842;cursor:pointer;}
         .supsw,.su2psw,.suinvite{padding-right:35px;width: 255px;background:url(../img/sign_sprite.png) no-repeat 276px -70px;}
+        p:nth-of-type(7){margin-left:124px;}
+        p:nth-of-type(7) a{color:#008842;}
+        .suup{width: 306px;height: 50px;line-height:50px;text-align: center;color: #fff;font-size: 18px;background: #008842;border:0 none;cursor:pointer;}
+        .suup:hover{background:#09964e;}
+        .sutip{position:absolute;top:11px;left:450px;height:17px;line-height:17px;}
+        p:nth-of-type(7) .sutip{margin-left:-124px;}
+        .sutip::before{content:'';display:block;float:left;width: 17px;height: 17px;margin-right:8px;background:url(../img/sign_sprite2.png) no-repeat;}
+        .sutipok::before{background-position: 0 -200px;}
+        .sutiptips::before{background-position: -20px -200px;}
+        .sutiperror::before{background-position: -40px -200px;}
     }
+    .susi{position:absolute;top:-30px;right:30px;font-size:14px;}
+    .susia{color: #ef760a;text-decoration: underline;}
 }
 
 .decorationline{border-bottom: 1px solid #e0e0e0;margin:30px 0;}

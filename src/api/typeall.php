@@ -29,8 +29,4 @@ $db->close();
 
 echo json_encode($a,JSON_UNESCAPED_UNICODE);
 
-
-
-
-
 ?>

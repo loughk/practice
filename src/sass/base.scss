@@ -76,11 +76,11 @@ body{ background:#f8f8f8;}
 
     .container{height: 63px;padding-top:15px;}
 
-    .header-logo{float:left;margin-right: 145px;width: 145px;height: 50px;background: url(../img/header_logo.png) no-repeat 0 0;}
+    .header-logo{float:left;display:block;margin-right: 145px;width: 145px;height: 50px;background: url(../img/header_logo.png) no-repeat 0 0;}
 
     .header-search{
         position: relative;float:left;width: 528px;
-        .header-searchTxt{float:left;width: 425px;height: 26px;line-height: 26px;padding: 0 10px;border: 1px solid #008842;background: #e0e0e0;}
+        .header-searchTxt{float:left;width: 425px;height: 26px;line-height: 26px;padding: 0 10px;border: 1px solid #008842;background: #fff;}
         .header-searchBtn{float:left;padding:0;width: 81px;height: 28px;line-height: 28px;border: none;cursor: pointer;color: #fff;font-size: 14px;background: #008842;}
         .header-searchKeyword{
             height: 30px;line-height: 30px;
