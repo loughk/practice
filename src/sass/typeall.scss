@@ -33,3 +33,9 @@
     li:hover .gl_buy{display:block;}
     .gl_btnbuy:hover{background:#09964e;}
 }
+
+.gdpages{
+    float:right;margin-right:50px;padding-top:20px;
+    li{float:left;width: 30px;height: 30px;line-height:30px;margin:0 10px;font-size:16px;text-align:center;background:#fff;border:1px solid #ddd;border-radius:50%;cursor:pointer;}
+    .gdpageson{border-color:#008842;color:#008842;}
+}

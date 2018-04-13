@@ -1,6 +1,8 @@
 <?php
 
 $aim = isset($_POST['aim']) ? $_POST['aim'] : Null;
+$nums = isset($_POST['nums']) ? $_POST['nums'] : Null;
+$page = isset($_POST['page']) ? $_POST['page'] : Null;
 $order = isset($_POST['order']) ? $_POST['order'] : Null;
 $typesid = isset($_POST['typesid']) ? $_POST['typesid'] : Null;
 
@@ -27,6 +29,14 @@ $q->close();
 
 $db->close();
 
-echo json_encode($a,JSON_UNESCAPED_UNICODE);
+$len = count($a);
+$pages = ceil($len/$nums);
+$a = array_slice($a,($page-1)*$nums,$nums);
+$res = array(
+    'pages' => $pages,
+    'data' => $a
+);
+
+echo json_encode($res,JSON_UNESCAPED_UNICODE);
 
 ?>
