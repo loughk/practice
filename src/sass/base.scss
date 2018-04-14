@@ -96,7 +96,20 @@ body{ background:#f8f8f8;}
             b{display: block;width: 24px;line-height: 12px;margin-right: 4px;text-align: center;}
         }
         .header-cartList{
-            position: absolute;top: 41px;right: 0;width: 380px;padding:80px 10px;background: url(../img/header_cartbg.jpg) no-repeat center center;background-color:#fff;border: 1px solid #007f4d;
+            display:none;position: absolute;top: 41px;right: 0;width: 380px;padding:10px;background: url(../img/header_cartbg.jpg) no-repeat center center;background-color:#fff;border: 1px solid #007f4d;opacity:0;
+            ul{
+                li{overflow:hidden;position:relative;padding:8px 0;border-bottom:1px solid #ddd;}
+                .cbcartname{float:left;display:block;width: 200px;height: 60px;line-height:60px;padding-left:70px;background-repeat:no-repeat;background-size:60px 60px;}
+                .cbcartprice{float:right;padding-top:12px;width: 75px;}
+                .cbcartdel{position:absolute;bottom:18px;right:34px;}
+                b{color:#e7380d;font-weight:bold;}
+            }
+            p{
+                padding-top:14px;height: 55px;font-size:14px;position:relative;
+                span{float:right;}
+                strong{font-size:16px;color:#e7380d;font-weight:bold;margin:0 3px;}
+                .cbcartgo{position:absolute;bottom:0;right:0;display: block;width: 75px;height: 30px;line-height:30px;font-size: 12px;text-align: center;color: #fff;background: #008842;}
+            }
         }
     }
 }

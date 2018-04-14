@@ -58,11 +58,14 @@
                 </p>
             </div>
             <div class="header-cart">
-                <a href="#" class="header-cartBtn">
-                    <span class="header-cartQty"><b>0</b></span>
-                    <span class="header-cartPrice">0.0</span>
+                <a href="../html/cart.html" class="header-cartBtn">
+                    <span class="header-cartQty"></span>
+                    <span class="header-cartPrice"></span>
                 </a>
-                <ul class="header-cartList"></ul>
+                <div class="header-cartList">
+                    <ul></ul>
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>

@@ -17,12 +17,13 @@
 }
 
 .goodlist{
-    overflow: hidden;margin-left: -13px;
+    margin-left: -13px;
     li{float:left;position: relative;width: 290px;margin: 15px 0 0 13px;background: #fff;}
     .gl_img{
         position: relative;display:block;width: 290px;height: 290px;
         img{display:block;width: 100%;height: 100%;}
     }
+    .gl_imgup{position:absolute;top:0;left:0;z-index:5;border:1px solid #ddd;overflow:hidden;}
     .gl_info{padding: 10px;height: 48px;}
     .gl_name{height: 16px;line-height: 16px;margin-bottom: 10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
     .gl_price{height: 22px;line-height: 22px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-weight: bold;font-size: 18px;color: #e7380d;}

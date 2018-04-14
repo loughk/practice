@@ -1,4 +1,4 @@
-requirejs(['common','base'],function(cm,bs){
+requirejs(['common','base'],function(cm){
     jQuery(function($){
         var service = document.querySelector('.service');
         service.style.display = 'none';

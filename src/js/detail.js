@@ -1,4 +1,4 @@
-requirejs(['common','base'],function(cm,bs){
+requirejs(['common','base'],function(cm){
     jQuery(function($){
         var objURI = cm.objURISearch(location.search);
 
@@ -176,12 +176,12 @@ requirejs(['common','base'],function(cm,bs){
             else if(t.className == 'infosminus'){
                 infosnum.value = (infosnum.value == 1) ? 1 : infosnum.value*1 - 1;
             }
-            else if(t.className == 'infosbuy'){
+            else if(t.className == 'infosbuy' || t.parentNode.className == 'infosbuy'){
                 var obj = {
                     'typesid':objURI.typesid,
                     'gdid':objURI.gdid,
                     'qty':infosnum.value
-                }
+                };
                 var arr = [];
                 if(cm.cookie.get('cart')){
                     arr = JSON.parse(cm.cookie.get('cart'));
@@ -190,15 +190,17 @@ requirejs(['common','base'],function(cm,bs){
                             v.qty = infosnum.value*1;
                         }
                         return v.gdid == objURI.gdid;
-                    }); 
-                    if(!terms){arr.push(obj)};
+                    });
+                    if(!terms){
+                        arr.push(obj);
+                    }
                 }
-                // else{}
-                //  
-                // var date = new Date();
-                // var date = new Date(date.setDate(date.getDate()+1));
-                // console.log(JSON.stringify(arr));
-                // cm.cookie.set('cart',JSON.stringify(arr),date,'/');
+                else{
+                    arr.push(obj);
+                }
+                cm.cookie.set('cart',JSON.stringify(arr),7,'/');
+
+                cm.callbackCart();
             }
         }
 

@@ -1,4 +1,4 @@
-requirejs(['common','base'],function(cm,bs){
+requirejs(['common','base'],function(cm){
     jQuery(function($){
         var objURI = cm.objURISearch(location.search);
 
@@ -153,6 +153,62 @@ requirejs(['common','base'],function(cm,bs){
             if(t.parentNode.className == 'gl_img'){
                 var gdid = t.parentNode.parentNode.dataset.gdid;
                 location.href = '../html/detail.html?typesid=' + objURI.typesid + '&gdid=' + gdid;
+            }
+            else if(t.className == 'gl_btnbuy'){
+                var nowgdid = t.parentNode.parentNode.dataset.gdid;
+                var obj = {
+                    'typesid':objURI.typesid,
+                    'gdid':nowgdid,
+                    'qty':1
+                };
+                var arr = [];
+                if(cm.cookie.get('cart')){
+                    arr = JSON.parse(cm.cookie.get('cart'));
+                    var terms = arr.some(function(v){
+                        if(v.gdid == nowgdid){
+                            v.qty = v.qty*1 + 1;
+                        }
+                        return v.gdid == nowgdid;
+                    });
+                    if(!terms){
+                        arr.push(obj);
+                    }
+                }
+                else{
+                    arr.push(obj);
+                }
+                cm.cookie.set('cart',JSON.stringify(arr),7,'/');
+
+
+                var $nowli = $(t.parentNode.parentNode);
+                /*动画没执行完，之前的img还在。所以加:first*/ 
+                var $nowimg = $nowli.find('.gl_img:first').clone().addClass('gl_imgup');
+                $nowli.append($nowimg);
+                $nowimg.animate({
+                    'width':100,
+                    'height':100,
+                    'border-radius':'50%'
+                },380,
+                function(){
+                    var x = $nowli.parent().width() - $nowli.position().left - 200;
+                    var y = -($nowimg.offset().top - $(document).scrollTop()-70);
+                    $nowimg.animate({
+                        'left':x,
+                        'top':y,
+                        'opacity':0.3,
+                    },750,function(){
+                        $nowimg.animate({
+                            'opacity':0,
+                        },380,function(){
+                            $nowimg.remove();
+                        });
+                    });
+                });
+
+
+                cm.callbackCart();
+
+
             }
         }
 

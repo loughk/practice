@@ -1,6 +1,6 @@
 // 模块的return等于传参,传参顺序跟[模块]一样。
-// 在config.js中配置了base的依赖模块为[jquery,footer,base],这里直接加载base就可以了。
-requirejs(['common','base'],function(cm,bs){
+// 在config.js中配置了base的依赖模块为[jquery,footer,common],这里直接加载base就可以了。
+requirejs(['common','base'],function(cm){
     jQuery(function($){
         var $banner = $('.banner');
         var $bannerLi = $('.banner li');
@@ -76,6 +76,7 @@ requirejs(['common','base'],function(cm,bs){
                 opt.$bn.append(opt.$page);
 
                 opt.$page.on('mouseenter','span',function(){
+                    /*停止正在执行的动画。状态不会继续改变，要手动更改。*/ 
                     opt.$img.eq(opt.idx).stop();
                     opt.$li.eq(opt.idx).css({'display':'none'});
                     opt.$img.eq(opt.idx).css({'height':'120%'});
