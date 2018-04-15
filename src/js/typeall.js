@@ -95,7 +95,6 @@ requirejs(['common','base'],function(cm){
                 dataArr.map(function(v){
                     var li = document.createElement('li');
                     li.dataset.gdid = v.gdid;
-                    li.dataset.gdinfo = v.gdinfo;
 
                     var a = document.createElement('a');
                     a.href = '#';

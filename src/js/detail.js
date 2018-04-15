@@ -180,14 +180,14 @@ requirejs(['common','base'],function(cm){
                 var obj = {
                     'typesid':objURI.typesid,
                     'gdid':objURI.gdid,
-                    'qty':infosnum.value
+                    'qty':infosnum.value*1
                 };
                 var arr = [];
                 if(cm.cookie.get('cart')){
                     arr = JSON.parse(cm.cookie.get('cart'));
                     var terms = arr.some(function(v){
                         if(v.gdid == objURI.gdid){
-                            v.qty = infosnum.value*1;
+                            v.qty = v.qty*1 + infosnum.value*1;
                         }
                         return v.gdid == objURI.gdid;
                     });

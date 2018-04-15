@@ -82,42 +82,42 @@
                         </a>
                     </li>
                     <li data-typeId="精选肉类">
-                        <a href="#">
+                        <a href="../html/typeall.html?typesid=02meat">
                             <i></i>
                             精选肉类
                             <b>&gt;</b>
                         </a>
                     </li>
                     <li data-typeId="禽类蛋品">
-                        <a href="#">
+                        <a href="../html/typeall.html?typesid=03egg">
                             <i></i>
                             禽类蛋品
                             <b>&gt;</b>
                         </a>
                     </li>   
                     <li data-typeId="海鲜水产">
-                        <a href="#">
+                        <a href="../html/typeall.html?typesid=04sea">
                             <i></i>
                             海鲜水产
                             <b>&gt;</b>
                         </a>
                     </li>    
                     <li data-typeId="乳品糕点">
-                        <a href="#">
+                        <a href="../html/typeall.html?typesid=05dairy">
                             <i></i>
                             乳品糕点
                             <b>&gt;</b>
                         </a>
                     </li>   
                     <li data-typeId="方便速食">
-                        <a href="#">
+                        <a href="../html/typeall.html?typesid=06fast">
                             <i></i>
                             方便速食
                             <b>&gt;</b>
                         </a>
                     </li>   
                     <li data-typeId="粮油杂货">
-                        <a href="#">
+                        <a href="../html/typeall.html?typesid=07mix">
                             <i></i>
                             粮油杂货
                             <b>&gt;</b>

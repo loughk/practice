@@ -187,8 +187,13 @@
   cursor: pointer;
 }
 
+.mycart .mycartgd .mycartdo label:hover {
+  color: #008842;
+}
+
 .mycart .mycartgd .mycartdo #mcckall {
   margin: 0 8px;
+  cursor: pointer;
 }
 
 .mycart .mycartgd .mycartdo .mcbtndsome {

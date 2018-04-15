@@ -31,9 +31,9 @@ requirejs(['common'],function(cm){
                                 }
 
                                 $navTypeItem.html(`
-                                    <h4><a href="#">${v.types}</a></h4>
+                                    <h4><a href="../html/typeall.html?typesid=${v.typesid}">${v.types}</a></h4>
                                     <p>${items}</p>
-                                    <a href="#">
+                                    <a href="../html/typeall.html?typesid=${v.typesid}">
                                         <img src="${v.navurl}"/>
                                     </a>
                                 `);

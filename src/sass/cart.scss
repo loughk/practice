@@ -49,7 +49,8 @@
         .mycartdo{
             padding:10px 20px;
             label{cursor:pointer;}
-            #mcckall{margin:0 8px;}
+            label:hover{color:#008842;}
+            #mcckall{margin:0 8px;cursor:pointer;}
             .mcbtndsome{margin:0 60px;}
             b{color: #249c61;font-size:16px;margin:0 10px;}
             span:nth-of-type(5){margin:0 50px;}
